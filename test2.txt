@@ -1,3 +1,0 @@
-auto pass
-commit
-com2
