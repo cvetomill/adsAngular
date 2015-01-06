@@ -1,7 +1,7 @@
-var adsApp = angular.module('adsApp', ['ngResource', 'ngRoute'])
+var adsApp = angular.module('adsApp', ['ngResource', 'ngRoute', 'LocalStorageModule'])
     .constant('baseServiceUrl', 'http://softuni-ads.azurewebsites.net/api/')
 
-    .config(function ($routeProvider) {
+    .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/', {
             templateUrl: '../templates/home.html',
             controller: 'HomeCtrl'
@@ -15,7 +15,9 @@ var adsApp = angular.module('adsApp', ['ngResource', 'ngRoute'])
             controller: 'RegisterCtrl as ctrl'
         });
         $routeProvider.otherwise({
-            templateUrl: '../templates/html.html',
-            controller: 'HomeCtrl'
+            // templateUrl: '../templates/html.html',
+            // controller: 'HomeCtrl'
+            redirectTo: '/'
         });
-    });
+
+    }]);
