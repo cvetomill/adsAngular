@@ -3,3 +3,14 @@
     padding: 0.2em;
     color: #aaaaaa;
 }
+.image {
+    height: 100%;
+    width: 100%;
+}
+.date {
+    float: right;
+    font-size: 0.8em;
+}
+.mainContent{
+    word-wrap: break-word;
+}
