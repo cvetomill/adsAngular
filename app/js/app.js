@@ -3,7 +3,7 @@ var adsApp = angular.module('adsApp', ['ngResource', 'ngRoute', 'LocalStorageMod
 
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/', {
-            templateUrl: '../templates/home.html',
+            templateUrl: 'templates/home.html',
             controller: 'HomeCtrl'
         });
         $routeProvider.when('/login', {
@@ -14,9 +14,23 @@ var adsApp = angular.module('adsApp', ['ngResource', 'ngRoute', 'LocalStorageMod
             templateUrl: 'templates/register.html',
             controller: 'RegisterCtrl as ctrl'
         });
+         $routeProvider.when('/user/home', {
+            templateUrl: 'templates/user/home.html',
+            controller: 'UserCtrl as ctrl'
+        });
+         $routeProvider.when('/user/ads', {
+            templateUrl: 'templates/user/home.html', //TODO: templates/user/ads.html
+            controller: 'UserCtrl as ctrl'
+        });
+        $routeProvider.when('/user/ads/publish', {
+            templateUrl: 'templates/user/home.html', //TODO: templates/user/ads/publish.html
+            controller: 'UserCtrl as ctrl'
+        });
+        $routeProvider.when('/user/ads/edit', {
+            templateUrl: 'templates/user/home.html', //TODO: templates/user/ads/edit.html
+            controller: 'UserCtrl as ctrl'
+        });
         $routeProvider.otherwise({
-            // templateUrl: '../templates/html.html',
-            // controller: 'HomeCtrl'
             redirectTo: '/'
         });
 
