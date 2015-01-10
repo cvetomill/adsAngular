@@ -1,4 +1,4 @@
-var adsApp = angular.module('adsApp', ['ngResource', 'ngRoute', 'LocalStorageModule'])
+var adsApp = angular.module('adsApp', ['ngResource', 'ngRoute', 'LocalStorageModule', 'cgNotify'])
     .constant('baseServiceUrl', 'http://softuni-ads.azurewebsites.net/api/')
 
     .config(['$routeProvider', function ($routeProvider) {
