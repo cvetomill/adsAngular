@@ -8,7 +8,7 @@ var adsApp = angular.module('adsApp', ['ngResource', 'ngRoute', 'LocalStorageMod
         });
         $routeProvider.when('/login', {
             templateUrl: 'templates/login.html',
-            controller: 'LoginCtrl'
+            controller: 'LoginCtrl as ctrl'
         });
         $routeProvider.when('/register', {
             templateUrl: 'templates/register.html',
