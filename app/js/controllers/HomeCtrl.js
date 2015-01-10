@@ -1,5 +1,5 @@
 'use strict';
-adsApp.controller('HomeCtrl', function($scope, $route, $log, adsDataService) {
+adsApp.controller('HomeCtrl',['$scope', '$route', '$log', 'adsDataService', function($scope, $route, $log, adsDataService) {
     $scope.pageTitle='Home';
 
     adsDataService.getAllAds(function (resp) {
@@ -12,4 +12,4 @@ adsApp.controller('HomeCtrl', function($scope, $route, $log, adsDataService) {
     adsDataService.getAllCategories(function (resp) {
         $scope.categories = resp;
     });
-});
+}]);

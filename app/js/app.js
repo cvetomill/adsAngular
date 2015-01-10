@@ -16,7 +16,7 @@ var adsApp = angular.module('adsApp', ['ngResource', 'ngRoute', 'LocalStorageMod
         });
          $routeProvider.when('/user/home', {
             templateUrl: 'templates/user/home.html',
-            controller: 'UserCtrl as ctrl'
+            controller: 'UserCtrl'
         });
          $routeProvider.when('/user/ads', {
             templateUrl: 'templates/user/home.html', //TODO: templates/user/ads.html
