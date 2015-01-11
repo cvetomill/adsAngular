@@ -20,7 +20,7 @@ var adsApp = angular.module('adsApp', ['ngResource', 'ngRoute', 'cgNotify'])
             controller: 'UserCtrl'
         });
          $routeProvider.when('/user/ads', {
-            templateUrl: 'templates/user/home.html', //TODO: templates/user/ads.html
+            templateUrl: 'templates/user/myAds.html',
             controller: 'UserCtrl as ctrl'
         });
         $routeProvider.when('/user/ads/publish', {
