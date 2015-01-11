@@ -5,7 +5,7 @@ adsApp.factory('adsDataService', function ($http, $log) {
             var pageIndex = 1;
             $http({
                 method: 'GET',
-                url: 'http://softuni-ads.azurewebsites.net/api/ads?pagesize=3&startpage=1' + pageIndex})
+                url: 'http://softuni-ads.azurewebsites.net/api/ads?pagesize=50&startpage=' + pageIndex}) //?pagesize=3&startpage=1
                 .success(function (data, status, headers, config) {
                     success(data);
                 })
