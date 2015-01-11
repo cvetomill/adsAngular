@@ -2,7 +2,7 @@
 adsApp.controller('LoginCtrl', ['$scope', '$location', 'notify', 'userData', function($scope, $location,notify, userData){
 
     this.pageTitle='Login';
-$scope.login=function(user){
+    $scope.login=function(user){
         userData.login(user)
         .then(function(){
                 $location.path('/user/home');
