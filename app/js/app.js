@@ -28,7 +28,7 @@ var adsApp = angular.module('adsApp', ['ngResource', 'ngRoute', 'cgNotify'])
             controller: 'UserCtrl as ctrl'
         });
         $routeProvider.when('/user/ads/edit', {
-            templateUrl: 'templates/user/home.html', //TODO: templates/user/ads/edit.html
+            templateUrl: ' templates/user/ads/edit.html', //TODO: templates/user/ads/edit.html
             controller: 'UserCtrl as ctrl'
         });
         $routeProvider.otherwise({

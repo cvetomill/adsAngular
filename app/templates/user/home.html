@@ -1,0 +1,21 @@
+<header class="navbar navbar-default">
+    <h1 class="header">Ads - {{pageTitle}} {{cat}}</h1>
+     <span>{{authentication.getCurrentUser().username}}</span>
+</header>
+<div class="jumbotron row">
+    <div id="wrapper">
+        <div class="row">
+            <div class="col-md-3">
+                <left-private-sidebar></left-private-sidebar>
+                <!-- <left-public-sidebar></left-public-sidebar> -->
+            </div>
+            <div class="mainContent col-md-6">
+                <public-ads></public-ads>
+            </div>
+            <div class="filters col-md-3">
+                <categories></categories>
+                <towns></towns>
+            </div>
+        </div>
+    </div>
+</div>
