@@ -2,10 +2,7 @@
 adsApp.factory('adsDataService', function ($http, $log) {
     return {
         getAllAds: function (success) {
-            var pageIndex = 1;
-            $http({
-                method: 'GET',
-                url: 'http://softuni-ads.azurewebsites.net/api/ads?pagesize=10&startpage='})
+            $http({method: 'GET', url: 'http://softuni-ads.azurewebsites.net/api/ads?pagesize=5&startpage='})
                 .success(function (data, status, headers, config) {
                     success(data);
                 })
@@ -36,3 +33,4 @@ adsApp.factory('adsDataService', function ($http, $log) {
         }
     }
 });
+
