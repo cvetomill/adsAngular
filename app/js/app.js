@@ -24,12 +24,12 @@ var adsApp = angular.module('adsApp', ['ngResource', 'ngRoute', 'cgNotify'])
             controller: 'UserCtrl as ctrl'
         });
         $routeProvider.when('/user/ads/publish', {
-            templateUrl: 'templates/user/home.html', //TODO: templates/user/ads/publish.html
-            controller: 'UserCtrl as ctrl'
+            templateUrl: 'templates/user/ads/publish.html',
+            controller: 'UserCtrl'
         });
         $routeProvider.when('/user/ads/edit', {
-            templateUrl: ' templates/user/ads/edit.html', //TODO: templates/user/ads/edit.html
-            controller: 'UserCtrl as ctrl'
+            templateUrl: 'templates/user/ads/edit.html',
+            controller: 'UserCtrl'
         });
         $routeProvider.otherwise({
             redirectTo: '/'
